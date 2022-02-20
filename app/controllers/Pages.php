@@ -5,12 +5,16 @@ class Pages  extends Controller {
     }
     public function index() {
         $data = [
-            'title' => 'Welcome To HOME PAGE',
+            'title' => 'SharePosts',
+            'description' => 'Simple social network built on the PHP mvc'
         ];
         $this->view('pages/index', $data);
     }
     public function about() {
-        $data = ['title' => 'Welcome About'];
+        $data = [
+            'title' => 'Welcome About',
+            'description'=>'App to shair posts with other users',
+        ];
 
         $this->view('pages/about', $data);
     }
