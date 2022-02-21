@@ -130,7 +130,7 @@ class Users extends Controller {
 
                 if ($loggedInUser) {
                     // Create Session
-                    die('Success');
+                    $this->createUserSession($loggedInUser);
                 } else {
                     $data['password_err'] = 'Password incorrect';
 
@@ -154,5 +154,13 @@ class Users extends Controller {
             // Load view
             $this->view('users/login', $data);
         }
+    }
+    public function createUserSession($user) {
+        $_SESSION['user_id'] = $user->id;
+        $_SESSION['user_email'] = $user->email;
+        $_SESSION['user_name'] = $user->name;
+
+        redirect('pages/index');
+
     }
 }
