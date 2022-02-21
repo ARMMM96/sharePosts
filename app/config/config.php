@@ -16,4 +16,4 @@ define('URLROOT', 'http://localhost/shareposts');
 define('SITENAME', 'SharePosts');
 
 // App Version
-define('APPVERSION', '1.0.0');
+define('APPVERSSION', '1.0.0');
