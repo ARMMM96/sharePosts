@@ -5,7 +5,7 @@
         <?php echo $data['description']; ?>
     </p>
     <p class="lead">
-        Version: <strong><?php echo APPVERSION; ?></strong>
+        Version: <strong><?php echo APPVERSSION; ?></strong>
     </p>
 </h1>
 <?php require APPROOT . '/views/inc/footer.php'; ?>

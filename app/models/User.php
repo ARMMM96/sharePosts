@@ -39,7 +39,7 @@ class User {
 
     // Find user by email
     public function findUserByEmail($email) {
-        $this->db->query('SELECT * from users WHERE email = :email');
+        $this->db->query('SELECT * FROM users WHERE email = :email');
 
         // Bind value
         $this->db->bind(':email', $email);
