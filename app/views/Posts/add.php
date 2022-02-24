@@ -13,9 +13,7 @@
         </div>
         <div class="form-group">
             <label for="body">Body: <sup>*</sup></label>
-            <textarea name="body" class="form-control form-control-lg <?php echo (!empty($data['body_err'])) ?  'is-invalid' : ''; ?>">
-                <?php echo $data['body'] ?>
-            </textarea>
+            <textarea name="body" class="form-control form-control-lg <?php echo (!empty($data['body_err'])) ?  'is-invalid' : ''; ?>"><?php echo $data['body'] ?></textarea>
             <span class="invalid-feedback"><?php echo $data['body_err']; ?></span>
         </div>
         <input type="submit" value="Submit" class="btn btn-success">
